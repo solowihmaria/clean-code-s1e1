@@ -29,71 +29,77 @@
       </a>
     </section>
     <main class="todo">
-      <div class="todo__add-task">
-        <label class="todo__label" for="new-task">Add Item</label>
-        <div class="todo__task-row">
-          <input 
-            id="new-task" 
-            class="todo__input" 
-            type="text"
-          >
-          <button class="todo__add-button">Add</button>
+      <section class="todo__section todo__section--add-task">
+        <div class="todo__add-task">
+          <label class="todo__label" for="new-task">Add Item</label>
+          <div class="todo__task-row">
+            <input 
+              id="new-task" 
+              class="todo__input" 
+              type="text"
+            >
+            <button class="todo__add-button">Add</button>
+          </div>
         </div>
-      </div>
-      <h3 class="todo__heading">Todo</h3>
-      <ul class="todo__list todo__list--incomplete" id="incompleted-tasks">
-        <li class="todo__item">
-          <input class="todo__checkbox" type="checkbox">
-          <label class="todo__task">Pay Bills</label>
-          <input class="todo__input" type="text">
-          <button class="todo__edit-button">Edit</button>
-          <button class="todo__delete-button">
-            <img 
-              class="todo__delete-icon" 
-              src="./remove.svg" 
-              alt="Remove button"
+      </section>    
+      <section class="todo__section todo__section--todo-list">
+        <h3 class="todo__heading">Todo</h3>
+        <ul class="todo__list todo__list--incomplete" id="incompleted-tasks">
+          <li class="todo__item">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__task">Pay Bills</label>
+            <input class="todo__input" type="text">
+            <button class="todo__edit-button">Edit</button>
+            <button class="todo__delete-button">
+              <img 
+                class="todo__delete-icon" 
+                src="./remove.svg" 
+                alt="Remove button"
+              >
+            </button>
+          </li>
+          <li class="todo__item todo__item--edit-mode">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__task">Go Shopping</label>
+            <input 
+              class="todo__input" 
+              type="text" 
+              value="Go Shopping"
             >
-          </button>
-        </li>
-        <li class="todo__item todo__item--edit-mode">
-          <input class="todo__checkbox" type="checkbox">
-          <label class="todo__task">Go Shopping</label>
-          <input 
-            class="todo__input" 
-            type="text" 
-            value="Go Shopping"
-          >
-          <button class="todo__edit-button">Save</button>
-          <button class="todo__delete-button">
-            <img 
-              class="todo__delete-icon" 
-              src="./remove.svg" 
-              alt="Remove button"
+            <button class="todo__edit-button">Save</button>
+            <button class="todo__delete-button">
+              <img 
+                class="todo__delete-icon" 
+                src="./remove.svg" 
+                alt="Remove button"
+              >
+            </button>
+          </li>
+        </ul>
+      </section>    
+      <section class="todo__section todo__section--completed-list">
+        <h3 class="todo__heading">Completed</h3>
+        <ul class="todo__list todo__list--completed" id="completed-tasks">
+          <li class="todo__item">
+            <input 
+              class="todo__checkbox" 
+              type="checkbox" 
+              checked
             >
-          </button>
-        </li>
-      </ul>
-      <h3 class="todo__heading">Completed</h3>
-      <ul class="todo__list todo__list--completed" id="completed-tasks">
-        <li class="todo__item">
-          <input 
-            class="todo__checkbox" 
-            type="checkbox" 
-            checked
-          >
-          <label class="todo__task">See the Doctor</label>
-          <input class="todo__input" type="text">
-          <button class="todo__edit-button">Edit</button>
-          <button class="todo__delete-button">
-            <img 
-              class="todo__delete-icon" 
-              src="./remove.svg" 
-              alt="Remove button"
-            >
-          </button>
-        </li>
-      </ul>
-    </main>
+            <label class="todo__task">See the Doctor</label>
+            <input class="todo__input" type="text">
+            <button class="todo__edit-button">Edit</button>
+            <button class="todo__delete-button">
+              <img 
+                class="todo__delete-icon" 
+                src="./remove.svg" 
+                alt="Remove button"
+              >
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>    
     <script src="app.js"></script>
   </body>
 </html>
