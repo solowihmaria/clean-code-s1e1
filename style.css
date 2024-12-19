@@ -46,10 +46,14 @@
 }
 .input-field__input,
 .task-item__checkbox,
-.button{
+.edit-button,
+.add-button,
+.delete-button{
   outline: none;
 }
-.button {
+.edit-button,
+.add-button,
+.delete-button {
   background: none;
   border: 0px;
   color: #888;
@@ -58,7 +62,9 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.button:hover {
+.edit-button:hover,
+.add-button:hover,
+.delete-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
