@@ -28,48 +28,46 @@
         Want more details?
       </a>
     </section>
-    <main class="todo">
-      <section class="todo__section todo__section--add-task">
-        <div class="todo__add-task">
-          <label class="todo__label" for="new-task">Add Item</label>
-          <div class="todo__task-row">
-            <input 
-              id="new-task" 
-              class="todo__input" 
-              type="text"
-            >
-            <button class="todo__add-button">Add</button>
-          </div>
+    <main class="todo-app">
+      <section class="add-task">        
+        <label class="add-task__label" for="new-task">Add Item</label>
+        <div class="add-task__controls">
+          <input 
+            id="new-task" 
+            class="input-field__input add-task__input" 
+            type="text"
+          >
+          <button class="button add-button">Add</button>          
         </div>
       </section>    
-      <section class="todo__section todo__section--todo-list">
-        <h3 class="todo__heading">Todo</h3>
-        <ul class="todo__list todo__list--incomplete" id="incompleted-tasks">
-          <li class="todo__item">
-            <input class="todo__checkbox" type="checkbox">
-            <label class="todo__task">Pay Bills</label>
-            <input class="todo__input" type="text">
-            <button class="todo__edit-button">Edit</button>
-            <button class="todo__delete-button">
+      <section class="task-list task-list--todo">
+        <h3 class="task-list__header">Todo</h3>
+        <ul class="task-list__items task-list__items--incomplete" id="incompleted-tasks">
+          <li class="task-item">
+            <input class="task-item__checkbox" type="checkbox">
+            <label class="task-item__label">Pay Bills</label>
+            <input class="input-field__input task-item__input" type="text">
+            <button class="button edit-button">Edit</button>
+            <button class="button delete-button">
               <img 
-                class="todo__delete-icon" 
+                class="task-item__delete-icon" 
                 src="./remove.svg" 
                 alt="Remove button"
               >
             </button>
           </li>
-          <li class="todo__item todo__item--edit-mode">
-            <input class="todo__checkbox" type="checkbox">
-            <label class="todo__task">Go Shopping</label>
+          <li class="task-item task-item--edit-mode">
+            <input class="task-item__checkbox" type="checkbox">
+            <label class="task-item__label">Go Shopping</label>
             <input 
-              class="todo__input" 
+              class="input-field__input task-item__input" 
               type="text" 
               value="Go Shopping"
             >
-            <button class="todo__edit-button">Save</button>
-            <button class="todo__delete-button">
+            <button class="button edit-button">Save</button>
+            <button class="button delete-button">
               <img 
-                class="todo__delete-icon" 
+                class="task-item__delete-icon" 
                 src="./remove.svg" 
                 alt="Remove button"
               >
@@ -77,21 +75,21 @@
           </li>
         </ul>
       </section>    
-      <section class="todo__section todo__section--completed-list">
-        <h3 class="todo__heading">Completed</h3>
-        <ul class="todo__list todo__list--completed" id="completed-tasks">
-          <li class="todo__item">
+      <section class="task-list task-list--completed">
+        <h3 class="task-list__header">Completed</h3>
+        <ul class="task-list__items task-list__items--completed" id="completed-tasks">
+          <li class="task-item">
             <input 
-              class="todo__checkbox" 
+              class="task-item__checkbox" 
               type="checkbox" 
               checked
             >
-            <label class="todo__task">See the Doctor</label>
-            <input class="todo__input" type="text">
-            <button class="todo__edit-button">Edit</button>
-            <button class="todo__delete-button">
+            <label class="task-item__label">See the Doctor</label>
+            <input class="input-field__input task-item__input" type="text">
+            <button class="button edit-button">Edit</button>
+            <button class="button delete-button">
               <img 
-                class="todo__delete-icon" 
+                class="task-item__delete-icon" 
                 src="./remove.svg" 
                 alt="Remove button"
               >
